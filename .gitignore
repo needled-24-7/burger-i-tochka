@@ -8,14 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-build
 dist
 dist-ssr
-storybook-static
 *.local
-
-# Sass-dts files
-*module.css.d.ts
 
 # Editor directories and files
 .vscode/*
@@ -27,6 +22,3 @@ storybook-static
 *.njsproj
 *.sln
 *.sw?
-
-playwright-report
-test-results

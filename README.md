@@ -1,38 +1,12 @@
-# Стартер на JavaScript для проекта Stellar Burger
+# React + Vite
 
-## Процедура создания коммита с проверками
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-При создании коммита автоматически запускаются проверка линтерами `stylelint`, `eslint` и форматирование `prettier`.
+Currently, two official plugins are available:
 
-Если линтер обнаружит ошибки:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- Коммит создан не будет
-- Необходимо исправить все выявленные проблемы
-- Добавить исправленные файлы в индекс: `git add .`
-- Повторить коммит
+## Expanding the ESLint configuration
 
-**Рекомендация:**  
-Для предотвращения ошибок на этапе коммита предварительно выполните:  
-`npm run lint`. Это позволит выявить и исправить проблемы до создания коммита.
-
-Есть также команды для запуска проверок по отдельности:
-
-- `npm run eslint` - запускает проверку линтера и исправляет проблемы, которые можно исправить автоматически,
-- `npm run stylelint` - запускает проверку литера для файлов стилей и исправляет проблемы, которые можно исправить автоматически,
-- `npm run prettier` - исправляет ошибки форматирования кода.
-
-Можно добавить автозапуск этих команд при сохранении файла в вашей IDE.
-
-Для создания коммита рекомендуется запускать команду `npm run commit`. Она позволяет обеспечить соответствие описаний коммитов [общепринятым соглашениям](https://www.conventionalcommits.org/en/v1.0.0/).
-
-В проекте настроены алиасы, которые можно использовать при импорте модулей:
-
-```
-	alias: {
-		'@': path.resolve(__dirname, './src'),
-		'@components': path.resolve(__dirname, './src/components'),
-		'@services': path.resolve(__dirname, './src/utils'),
-		'@pages': path.resolve(__dirname, './src/pages'),
-		'@utils': path.resolve(__dirname, './src/utils'),
-	},
-```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
